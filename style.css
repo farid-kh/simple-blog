@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #eee;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0.8rem;
+}
+
+.menuToggle {
+    display: none;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 10px 10px -3px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+a {
+    text-decoration: none;
+    color: #082933;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+}
+
+.logo-color {
+    color: crimson;
+    font-weight: 600;
+}
+
+.header .navigation {
+    list-style: none;
+    display: flex;
+}
+
+.header .navigation li {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+.header .navigation li a:hover {
+    color: crimson;
+}
+
+/* isi konten */
+
+.main .col {
+    width: 65%;
+}
+
+.post.mt {
+    margin-top: 2rem;
+}
+
+.post .post-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    padding: 1.2rem;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin: 0 0 1rem 0;
+}
+
+.user-info span {
+    margin-left: 0.5rem;
+    color: gray;
+}
+
+.post {
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    margin-top: 6rem;
+}
+
+.post p {
+    line-height: 1.3rem;
+    opacity: 0.8;
+    text-align: justify;
+}
+
+.post-info {
+    padding: 1.2rem;
+}
+
+.post-info h2 {
+    margin-bottom: 1rem;
+}
+
+.container.main {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+footer {
+    margin-top: 2rem;
+    background-color: rgb(163, 160, 155);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container.footer {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.sidebar {
+    margin-top: 6rem;
+    width: 30%;
+    height: 30%;
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar .judul {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0px;
+    padding: 1rem 2rem;
+    background-color: rgba(241, 241, 241, 1);
+}
+
+.list-artikel {
+    list-style: none;
+}
+
+.list-artikel li {
+    margin: 1rem;
+}
+
+.list-artikel li:hover {
+    color: crimson;
+    cursor: pointer;
+}
+
+/* responsive */
+@media (max-width: 800px) {
+    .header .navigation {
+        display: none;
+    }
+
+    .header .menuToggle {
+        display: flex;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .container.main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .col {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .header .navigation.active {
+        display: flex;
+        position: fixed;
+        top: 4rem;
+        background-color: rgb(223, 221, 221);
+        width: 100%;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+        transition: all 1s ease;
+    }
+}

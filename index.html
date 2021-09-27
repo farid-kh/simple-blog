@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"
+        ></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <header>
+            <div class="container header">
+                <a href="#" class="logo"
+                    >Ini<span class="logo-color">Logo</span></a
+                >
+                <div class="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- END NAVBAR -->
+
+        <!-- CONTENT -->
+        <div class="container main">
+            <!-- isi 1 -->
+            <div class="col">
+                <div class="post">
+                    <img class="post-img" src="img/content1.jpg" alt="" />
+                    <div class="post-info">
+                        <div class="user-info">
+                            <i class="fas fa-clock"></i>
+                            <span>Sept 1, 2020</span>
+                        </div>
+                        <h2>Membuat masakan Boorgir</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Maxime nihil debitis eveniet iste in
+                            laudantium quae culpa tempora dicta velit! Nam
+                            quaerat officia nobis esse.
+                        </p>
+                    </div>
+                </div>
+                <div class="post mt">
+                    <img class="post-img" src="img/content2.jpg" alt="" />
+                    <div class="post-info">
+                        <div class="user-info">
+                            <i class="fas fa-clock"></i>
+                            <span>Sept 1, 2020</span>
+                        </div>
+                        <h2>Membuat masakan Boorgir</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Maxime nihil debitis eveniet iste in
+                            laudantium quae culpa tempora dicta velit! Nam
+                            quaerat officia nobis esse.
+                        </p>
+                    </div>
+                </div>
+                <div class="post mt">
+                    <img class="post-img" src="img/content3.jpg" alt="" />
+                    <div class="post-info">
+                        <div class="user-info">
+                            <i class="fas fa-clock"></i>
+                            <span>Sept 1, 2020</span>
+                        </div>
+                        <h2>Membuat masakan Boorgir</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Maxime nihil debitis eveniet iste in
+                            laudantium quae culpa tempora dicta velit! Nam
+                            quaerat officia nobis esse.
+                        </p>
+                    </div>
+                </div>
+                <div class="post mt">
+                    <img class="post-img" src="img/content4.jpg" alt="" />
+                    <div class="post-info">
+                        <div class="user-info">
+                            <i class="fas fa-clock"></i>
+                            <span>Sept 1, 2020</span>
+                        </div>
+                        <h2>Membuat masakan Boorgir</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Maxime nihil debitis eveniet iste in
+                            laudantium quae culpa tempora dicta velit! Nam
+                            quaerat officia nobis esse.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- isi 2 -->
+            <div class="sidebar">
+                <h2 class="judul">Rekomendasi Artikel</h2>
+                <ul class="list-artikel">
+                    <li>Cara Memasak Boorgir</li>
+                    <li>Makanan Mewah Bergizi</li>
+                    <li>Menu Andalan Anak Kost</li>
+                    <li>Pengaruh Micin Pada Masakan</li>
+                    <li>Sarapan Mudah dan Cepat</li>
+                </ul>
+            </div>
+        </div>
+        <!-- END CONTENT -->
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container footer">
+                <p>Contact: +627777777</p>
+                <p>© All right reserved</p>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+
+        <!-- JQUERY -->
+        <script type="text/javascript">
+            $(".menuToggle").click(function () {
+                $(this).find("i").toggleClass("fa-bars fa-times");
+                $(".navigation").toggleClass("active");
+            });
+        </script>
+    </body>
+</html>
