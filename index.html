@@ -17,6 +17,7 @@
             integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
             crossorigin="anonymous"
         ></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <title>Document</title>
     </head>
     <body>
@@ -43,7 +44,11 @@
         <div class="container main">
             <!-- isi 1 -->
             <div class="col">
-                <div class="post">
+                <div
+                    class="post"
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                >
                     <img class="post-img" src="img/content1.jpg" alt="" />
                     <div class="post-info">
                         <div class="user-info">
@@ -59,7 +64,11 @@
                         </p>
                     </div>
                 </div>
-                <div class="post mt">
+                <div
+                    class="post mt"
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                >
                     <img class="post-img" src="img/content2.jpg" alt="" />
                     <div class="post-info">
                         <div class="user-info">
@@ -75,7 +84,11 @@
                         </p>
                     </div>
                 </div>
-                <div class="post mt">
+                <div
+                    class="post mt"
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                >
                     <img class="post-img" src="img/content3.jpg" alt="" />
                     <div class="post-info">
                         <div class="user-info">
@@ -91,7 +104,11 @@
                         </p>
                     </div>
                 </div>
-                <div class="post mt">
+                <div
+                    class="post mt"
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                >
                     <img class="post-img" src="img/content4.jpg" alt="" />
                     <div class="post-info">
                         <div class="user-info">
@@ -108,8 +125,8 @@
                     </div>
                 </div>
             </div>
-            <!-- isi 2 -->
-            <div class="sidebar">
+            <!-- SIDEBAR -->
+            <div class="sidebar" data-aos="fade-left" data-aos-duration="2500">
                 <h2 class="judul">Rekomendasi Artikel</h2>
                 <ul class="list-artikel">
                     <li>Cara Memasak Boorgir</li>
@@ -137,6 +154,11 @@
                 $(this).find("i").toggleClass("fa-bars fa-times");
                 $(".navigation").toggleClass("active");
             });
+        </script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
         </script>
     </body>
 </html>
